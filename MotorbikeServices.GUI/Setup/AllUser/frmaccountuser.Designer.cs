@@ -1,0 +1,323 @@
+﻿namespace MotorbikeServices.GUI.Setup
+{
+    partial class frmaccountuser
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            btnThuNho = new Button();
+            btnDangKyXeMoi = new Button();
+            lblLogo = new Label();
+            btnLichSuSuaChua = new Button();
+            btnThongTinCaNhan = new Button();
+            btnTroLyAo = new Button();
+            lblSubtitle = new Label();
+            button2 = new Button();
+            panel2 = new Panel();
+            btnDangKyBaoDuongXe = new Button();
+            btnKiemTraDonDaDat = new Button();
+            lblMenuTitle = new Label();
+            panel1 = new Panel();
+            button5 = new Button();
+            panelMain = new Panel();
+            tableLayoutPanel1 = new TableLayoutPanel();
+            panel2.SuspendLayout();
+            panel1.SuspendLayout();
+            tableLayoutPanel1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // btnThuNho
+            // 
+            btnThuNho.BackColor = Color.FromArgb(255, 255, 128);
+            btnThuNho.BackgroundImageLayout = ImageLayout.None;
+            btnThuNho.Location = new Point(20, 26);
+            btnThuNho.Margin = new Padding(3, 2, 3, 2);
+            btnThuNho.Name = "btnThuNho";
+            btnThuNho.Size = new Size(54, 46);
+            btnThuNho.TabIndex = 13;
+            btnThuNho.Text = "☰";
+            btnThuNho.UseVisualStyleBackColor = false;
+            btnThuNho.Click += btnThuNho_Click;
+            // 
+            // btnDangKyXeMoi
+            // 
+            btnDangKyXeMoi.BackColor = Color.Transparent;
+            btnDangKyXeMoi.FlatAppearance.BorderSize = 0;
+            btnDangKyXeMoi.FlatStyle = FlatStyle.Flat;
+            btnDangKyXeMoi.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnDangKyXeMoi.ForeColor = Color.White;
+            btnDangKyXeMoi.Location = new Point(0, 172);
+            btnDangKyXeMoi.Margin = new Padding(3, 2, 3, 2);
+            btnDangKyXeMoi.Name = "btnDangKyXeMoi";
+            btnDangKyXeMoi.Size = new Size(201, 46);
+            btnDangKyXeMoi.TabIndex = 1;
+            btnDangKyXeMoi.Text = "🚗 Đăng ký xe mới";
+            btnDangKyXeMoi.UseVisualStyleBackColor = false;
+            btnDangKyXeMoi.Click += btnDangKyXeMoi_Click;
+            // 
+            // lblLogo
+            // 
+            lblLogo.AutoSize = true;
+            lblLogo.BackColor = Color.Transparent;
+            lblLogo.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblLogo.ForeColor = Color.White;
+            lblLogo.Location = new Point(3, 14);
+            lblLogo.Name = "lblLogo";
+            lblLogo.Size = new Size(169, 30);
+            lblLogo.TabIndex = 2;
+            lblLogo.Text = "DAIDAIMOTOR";
+            // 
+            // btnLichSuSuaChua
+            // 
+            btnLichSuSuaChua.BackColor = Color.Transparent;
+            btnLichSuSuaChua.FlatAppearance.BorderSize = 0;
+            btnLichSuSuaChua.FlatStyle = FlatStyle.Flat;
+            btnLichSuSuaChua.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnLichSuSuaChua.ForeColor = Color.White;
+            btnLichSuSuaChua.Location = new Point(-3, 222);
+            btnLichSuSuaChua.Margin = new Padding(3, 2, 3, 2);
+            btnLichSuSuaChua.Name = "btnLichSuSuaChua";
+            btnLichSuSuaChua.Size = new Size(204, 46);
+            btnLichSuSuaChua.TabIndex = 2;
+            btnLichSuSuaChua.Text = "🛠️ Quản Lý Bảo Dưỡng ";
+            btnLichSuSuaChua.UseVisualStyleBackColor = false;
+            btnLichSuSuaChua.Click += btnLichSuSuaChua_Click;
+            // 
+            // btnThongTinCaNhan
+            // 
+            btnThongTinCaNhan.BackColor = Color.Transparent;
+            btnThongTinCaNhan.FlatAppearance.BorderSize = 0;
+            btnThongTinCaNhan.FlatStyle = FlatStyle.Flat;
+            btnThongTinCaNhan.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnThongTinCaNhan.ForeColor = Color.White;
+            btnThongTinCaNhan.Location = new Point(0, 122);
+            btnThongTinCaNhan.Margin = new Padding(3, 2, 3, 2);
+            btnThongTinCaNhan.Name = "btnThongTinCaNhan";
+            btnThongTinCaNhan.Size = new Size(201, 46);
+            btnThongTinCaNhan.TabIndex = 3;
+            btnThongTinCaNhan.Text = "👤 Thông tin cá nhân";
+            btnThongTinCaNhan.UseVisualStyleBackColor = false;
+            btnThongTinCaNhan.Click += btnThongTinCaNhan_Click;
+            // 
+            // btnTroLyAo
+            // 
+            btnTroLyAo.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnTroLyAo.FlatAppearance.BorderSize = 0;
+            btnTroLyAo.FlatStyle = FlatStyle.Flat;
+            btnTroLyAo.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnTroLyAo.ForeColor = Color.White;
+            btnTroLyAo.Location = new Point(-3, 372);
+            btnTroLyAo.Margin = new Padding(3, 2, 3, 2);
+            btnTroLyAo.Name = "btnTroLyAo";
+            btnTroLyAo.Size = new Size(204, 44);
+            btnTroLyAo.TabIndex = 12;
+            btnTroLyAo.Text = "Trợ Lý AI";
+            btnTroLyAo.UseVisualStyleBackColor = true;
+            btnTroLyAo.Click += button1_Click;
+            // 
+            // lblSubtitle
+            // 
+            lblSubtitle.AutoSize = true;
+            lblSubtitle.BackColor = Color.Transparent;
+            lblSubtitle.Font = new Font("Segoe UI Semibold", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSubtitle.ForeColor = Color.LightSteelBlue;
+            lblSubtitle.Location = new Point(161, 46);
+            lblSubtitle.Name = "lblSubtitle";
+            lblSubtitle.Size = new Size(34, 13);
+            lblSubtitle.TabIndex = 3;
+            lblSubtitle.Text = "USER";
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.Transparent;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(3, 60);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(199, 38);
+            button2.TabIndex = 5;
+            button2.Text = "Trở về trang chủ";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(49, 27, 146);
+            panel2.Controls.Add(btnDangKyBaoDuongXe);
+            panel2.Controls.Add(btnKiemTraDonDaDat);
+            panel2.Controls.Add(lblMenuTitle);
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(lblSubtitle);
+            panel2.Controls.Add(btnTroLyAo);
+            panel2.Controls.Add(btnThongTinCaNhan);
+            panel2.Controls.Add(btnLichSuSuaChua);
+            panel2.Controls.Add(lblLogo);
+            panel2.Controls.Add(btnDangKyXeMoi);
+            panel2.Dock = DockStyle.Left;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(201, 469);
+            panel2.TabIndex = 1;
+            // 
+            // btnDangKyBaoDuongXe
+            // 
+            btnDangKyBaoDuongXe.BackColor = Color.Transparent;
+            btnDangKyBaoDuongXe.FlatAppearance.BorderSize = 0;
+            btnDangKyBaoDuongXe.FlatStyle = FlatStyle.Flat;
+            btnDangKyBaoDuongXe.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnDangKyBaoDuongXe.ForeColor = Color.White;
+            btnDangKyBaoDuongXe.Location = new Point(-2, 272);
+            btnDangKyBaoDuongXe.Margin = new Padding(3, 2, 3, 2);
+            btnDangKyBaoDuongXe.Name = "btnDangKyBaoDuongXe";
+            btnDangKyBaoDuongXe.Size = new Size(204, 46);
+            btnDangKyBaoDuongXe.TabIndex = 15;
+            btnDangKyBaoDuongXe.Text = "Đăng Ký Bảo Dưỡng Xe";
+            btnDangKyBaoDuongXe.UseVisualStyleBackColor = false;
+            btnDangKyBaoDuongXe.Click += btnDangKyBaoDuongXe_Click;
+            // 
+            // btnKiemTraDonDaDat
+            // 
+            btnKiemTraDonDaDat.BackColor = Color.Transparent;
+            btnKiemTraDonDaDat.FlatAppearance.BorderSize = 0;
+            btnKiemTraDonDaDat.FlatStyle = FlatStyle.Flat;
+            btnKiemTraDonDaDat.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 163);
+            btnKiemTraDonDaDat.ForeColor = Color.White;
+            btnKiemTraDonDaDat.Location = new Point(-3, 322);
+            btnKiemTraDonDaDat.Margin = new Padding(3, 2, 3, 2);
+            btnKiemTraDonDaDat.Name = "btnKiemTraDonDaDat";
+            btnKiemTraDonDaDat.Size = new Size(204, 46);
+            btnKiemTraDonDaDat.TabIndex = 14;
+            btnKiemTraDonDaDat.Text = "Kiểm Tra Đơn Đã Đặt";
+            btnKiemTraDonDaDat.UseVisualStyleBackColor = false;
+            btnKiemTraDonDaDat.Click += btnKiemTraDonDaDat_Click;
+            // 
+            // lblMenuTitle
+            // 
+            lblMenuTitle.AutoSize = true;
+            lblMenuTitle.BackColor = Color.Transparent;
+            lblMenuTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMenuTitle.ForeColor = Color.LightSteelBlue;
+            lblMenuTitle.Location = new Point(0, 100);
+            lblMenuTitle.Name = "lblMenuTitle";
+            lblMenuTitle.Size = new Size(112, 15);
+            lblMenuTitle.TabIndex = 1;
+            lblMenuTitle.Text = "TIỆN ÍCH CÁ NHÂN";
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(49, 27, 146);
+            panel1.Controls.Add(button5);
+            panel1.Controls.Add(btnThuNho);
+            panel1.Dock = DockStyle.Fill;
+            panel1.Location = new Point(3, 2);
+            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(832, 94);
+            panel1.TabIndex = 2;
+            // 
+            // button5
+            // 
+            button5.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button5.BackColor = Color.FromArgb(255, 255, 128);
+            button5.ForeColor = SystemColors.ControlText;
+            button5.Location = new Point(732, 23);
+            button5.Margin = new Padding(3, 2, 3, 2);
+            button5.Name = "button5";
+            button5.Size = new Size(80, 49);
+            button5.TabIndex = 14;
+            button5.Text = "Đăng Xuất";
+            button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click_1;
+            // 
+            // panelMain
+            // 
+            panelMain.BackColor = Color.LightGray;
+            panelMain.Dock = DockStyle.Fill;
+            panelMain.Location = new Point(3, 100);
+            panelMain.Margin = new Padding(3, 2, 3, 2);
+            panelMain.Name = "panelMain";
+            panelMain.Size = new Size(832, 375);
+            panelMain.TabIndex = 3;
+            // 
+            // tableLayoutPanel1
+            // 
+            tableLayoutPanel1.ColumnCount = 1;
+            tableLayoutPanel1.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tableLayoutPanel1.Controls.Add(panel1, 0, 0);
+            tableLayoutPanel1.Controls.Add(panelMain, 0, 1);
+            tableLayoutPanel1.Dock = DockStyle.Fill;
+            tableLayoutPanel1.Location = new Point(201, 0);
+            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
+            tableLayoutPanel1.Name = "tableLayoutPanel1";
+            tableLayoutPanel1.RowCount = 2;
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.RowStyles.Add(new RowStyle());
+            tableLayoutPanel1.Size = new Size(838, 469);
+            tableLayoutPanel1.TabIndex = 4;
+            // 
+            // frmaccountuser
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1039, 469);
+            Controls.Add(tableLayoutPanel1);
+            Controls.Add(panel2);
+            Margin = new Padding(3, 2, 3, 2);
+            Name = "frmaccountuser";
+            Text = "Menu User";
+            WindowState = FormWindowState.Maximized;
+            Load += frmaccountuser_Load;
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel1.ResumeLayout(false);
+            tableLayoutPanel1.ResumeLayout(false);
+            ResumeLayout(false);
+        }
+
+        #endregion
+        private Button btnThuNho;
+        private Button btnDangKyXeMoi;
+        private Label lblLogo;
+        private Button btnLichSuSuaChua;
+        private Button btnThongTinCaNhan;
+        private Button btnTroLyAo;
+        private Label lblSubtitle;
+        private Button button2;
+        private Panel panel2;
+        private Panel panel1;
+        private Panel panelMain;
+        private TableLayoutPanel tableLayoutPanel1;
+        private Button button5;
+        private Label lblMenuTitle;
+        private Button button1;
+        private Button btnKiemTraDonDaDat;
+        private Button btnDangKyBaoDuongXe;
+    }
+}

@@ -1,0 +1,189 @@
+﻿using MotorbikeServices.GUI.Setup.Synthesis;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+using MotorbikeServices.GUI.Setup.AllUser;
+using MotorbikeServices.BLL.Services;
+
+namespace MotorbikeServices.GUI.Setup
+{
+
+    public partial class frmaccountuser : Form
+    {
+        private readonly QuanLyBaoDuongService _baoDuongService = new QuanLyBaoDuongService(); // Khai báo Service
+        private readonly int _currentUserId;
+        public frmaccountuser()
+        {
+            InitializeComponent();
+            this.FormBorderStyle = FormBorderStyle.None;
+        }
+        public frmaccountuser(int userId) : this()
+        {
+            _currentUserId = userId;
+        }
+        private readonly Color colorDarkSidebar = Color.FromArgb(24, 34, 52);
+
+        private readonly Color colorLightBlack = Color.FromArgb(50, 50, 50);
+        private async void frmaccountuser_Load(object sender, EventArgs e)
+        {
+            button2.Visible = false;
+            btnThongTinCaNhan.Visible = true;
+            btnDangKyXeMoi.Visible = true;
+            btnLichSuSuaChua.Visible = true;
+            btnTroLyAo.Visible = true;
+            panel1.Visible = true;
+            panel1.BringToFront();
+
+            if (_currentUserId > 0)
+            {
+                await Task.Run(async () =>
+                {
+                    await _baoDuongService.KiemTraVaGuiMailBaoDuongTuDongAsync(_currentUserId);
+                });
+            }
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnThongTinCaNhan_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmttcn(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+        private void OpenChildForm(Form childForm, Panel panelMain)
+        {
+            panelMain.Controls.Clear();
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+
+            panelMain.Controls.Add(childForm);
+            panelMain.Tag = childForm;
+            //childForm.BringToFront();
+            childForm.Show();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormAIChatUser(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ShowHomeButtonOnly()
+        {
+
+            button2.Visible = true;
+            btnThongTinCaNhan.Visible = false;
+            btnDangKyXeMoi.Visible = false;
+            btnLichSuSuaChua.Visible = false;
+            btnDangKyBaoDuongXe.Visible = false;
+            btnKiemTraDonDaDat.Visible = false;
+            btnTroLyAo.Visible = false;
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            panelMain.Controls.Clear();
+            button2.Visible = false;
+            btnThongTinCaNhan.Visible = true;
+            btnDangKyXeMoi.Visible = true;
+            btnLichSuSuaChua.Visible = true;
+            btnDangKyBaoDuongXe.Visible = true;
+            btnKiemTraDonDaDat.Visible = true;
+            btnTroLyAo.Visible = true;
+        }
+
+        private void btnDangKyXeMoi_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new formDangKyXe(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+
+        private void btnLichSuSuaChua_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormQuanLyBaoDuong(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+
+        private void btnThuNho_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = !panel2.Visible;
+        }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button5_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+        "Bạn có chắc chắn muốn đăng xuất khỏi hệ thống?",
+        "Xác nhận đăng xuất",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question
+    );
+
+            if (result == DialogResult.Yes)
+            {
+                // 1. Quét tất cả Form con đang mở (hoặc ẩn) để hoàn trả kho nếu giỏ hàng còn đồ
+                foreach (Form frm in Application.OpenForms)
+                {
+                    if (frm is frmDangKyBaoDuongXe formBaoDuong)
+                    {
+                        formBaoDuong.ClearAndRestoreStock();
+                    }
+                }
+
+                // 2. Mở lại Form Đăng Nhập
+                //frmlogin loginForm = new frmlogin();
+                //loginForm.Show();
+
+                // 3. Đóng Form Menu hiện tại
+                this.Close();
+            }
+        }
+
+        private void btnDangKyBaoDuongXe_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDangKyBaoDuongXe(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+
+        private void btnKiemTraDonDaDat_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new FormKiemTraDonDaDat(_currentUserId), panelMain);
+            ShowHomeButtonOnly();
+        }
+    }
+
+}
